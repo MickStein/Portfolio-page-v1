@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: 'dinprobold';
     src: url(Fonts/DINPro-CondBold.otf);
@@ -17,13 +18,12 @@
 	font-weight: 300;
 }
 
+/* Initial Tag setup inc fade in when page starts */
+
 body {
 	background: rgb(230, 230, 230);
 	font-style: 'dinpromedium';
 	overflow-x: hidden;
-	/* background-image: url(/images/silvio-kundt-Fixg8KipOg8-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover; */
 }
 
 body section {
@@ -78,6 +78,8 @@ section {
 	padding-top: 8%;
 	padding-bottom: 13%;
 }
+
+/* Class stylings */
 
 .bg {
 	z-index: -10;
@@ -153,19 +155,7 @@ section {
 .container-skills {
 	width: 100%;
 	background-color: #ddd;
-}
-  
-.skills {
-	text-align: right;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: #f8f8ff;
-}
-  
-.html {width: 90%; background-color: #e34c26;}
-.css {width: 75%; background-color: #2196F3;}
-.js {width: 55%; background-color: #f7df1e; color: black; }
-.bootstrap {width: 60%; background-color: #553C7B;}
+} 
 
 #mainNavbar {
 	font-size: 1.5rem;
@@ -224,10 +214,10 @@ section {
 
 .bar-fill{
     background-color: burlywood;
-    height: 30px;
+    height: 26px;
     width: 2rem;
     position: relative;
-    bottom: 30px;
+    bottom: 28px;
     border-radius: 30px 100% 100% 30px;
 }
 
@@ -235,6 +225,10 @@ section {
 	color: #ebebeb;
     margin: -5px;
 	text-align: center;
+}
+
+.dark-text {
+	color: black;
 }
 
 #bar-one {
@@ -282,6 +276,7 @@ section {
     transition: 1s;
 }
 
+/* Media queries */
 @media (max-width: 870px) {
 
 	.blurb p {
@@ -303,5 +298,10 @@ section {
 
 	#mainNavbar {
 		position: absolute;
+	}
+
+	.bar-fill {
+		height: 25px;
+		bottom: 25px;
 	}
 }
