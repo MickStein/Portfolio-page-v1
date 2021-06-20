@@ -1,0 +1,23 @@
+//Basically a function like in JS. Params can be added by inc paraenthasis
+// @mixin flexCenter($direction, $background) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     flex-direction: $direction;
+//     background: $background;
+// }
+
+header {
+    //@include flexCenter(column, rgb(145, 183, 201)); //how to include mixin
+    height: 100vh;
+    background: rgb(137, 137, 255);
+    
+
+    button{
+        background: $primaryBtn;
+        &:hover {
+            background: blue;
+        }
+    }
+}

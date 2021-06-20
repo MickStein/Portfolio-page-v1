@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'dinprobold';
+    src: url(Fonts/DINPro-CondBold.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'dinprolight';
+    src: url(Fonts/DINPro-CondLight.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'dinpromedium';
+    src: url(Fonts/DINPro-CondMedium.otf);
+    font-style: normal;
+	font-weight: 300;
+}
+
+body {
+	background: rgb(230, 230, 230);
+	font-style: 'dinpromedium';
+	overflow-x: hidden;
+	/* background-image: url(/images/silvio-kundt-Fixg8KipOg8-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; */
+}
+
+body section {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+footer {
+	font-weight: 400;
+	font-size: .9rem;
+	line-height: 2;
+	text-align: center;
+	background-color: rgb(146, 146, 146);
+	margin: 0%;
+}
+
+p {
+	text-align: justify;
+	
+}
+
+section {
+	padding-top: 13%;
+	padding-bottom: 13%;
+}
+
+.bg {
+	z-index: -10;
+	position: fixed;
+	background-size: cover;
+	margin-top: -100px;
+	opacity: .1;
+}
+
+.blurb h2 {
+	color: rgb(46, 46, 46);
+	font-weight: 400;
+	font-size: 2.5rem;
+}
+
+.blurb p {
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 2;
+}
+
+.card-img-top {
+	height: 191.68px;
+}
+
+.card-text {
+	font-size: 1rem;
+}
+
+.contact-media {
+	list-style: none;
+}
+
+.contact-wrapper {
+	padding-bottom: 50px;
+}
+
+.footer-text {
+	margin-bottom: 0;
+	color: white;
+}
+
+.footer-wrapper {
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.icon {
+	width: 30px;
+}
+
+.pic-wrapper img {
+	width: 400px;
+	padding-left: 20%;
+	padding-top: 20px;
+}
+
+.projects-wrapper div {
+	background-image: url(/images/weatherapp.jpg);
+	background-repeat: no-repeat;
+}
+
+.navbar.scrolled {
+	background: rgb(146, 146, 146);
+	transition: background 500ms
+
+}
+
+.text-wrapper {
+	margin-bottom: 0;
+}
+
+.container-skills {
+	width: 100%;
+	background-color: #ddd;
+}
+  
+.skills {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #f8f8ff;
+}
+  
+.html {width: 90%; background-color: #e34c26;}
+.css {width: 75%; background-color: #2196F3;}
+.js {width: 55%; background-color: #f7df1e; color: black; }
+.bootstrap {width: 60%; background-color: #553C7B;}
+
+#mainNavbar {
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+	color: white;
+}
+
+#mainNavbar .nav-link:hover {
+	color: rgb(46, 109, 180);
+}
+
+#mainNavbar .navbar-brand {
+  	color: rgb(46, 109, 180);
+  	font-size: 60%;
+  	text-align: center;
+}
+
+#mainNavbar .navbar-toggler {
+  	color: rgb(46, 109, 180);
+}
+
+#headingGroup span {
+	color: rgb(46, 109, 180);
+}
+
+#headingGroup h1 {
+	font-weight: 100;
+	font-size: 4rem;
+}
+
+#terms {
+	font-size: .6rem;
+}
+
+
+@media (max-width: 870px) {
+
+	.blurb p {
+		font-size: 1rem;
+	}
+
+	.blurb h2 {
+		font-weight: 800;
+		font-size: 1.5rem;
+	}
+
+	.pic-wrapper img {
+		padding-bottom: 100px;
+		width: 300px;
+		max-width: 400px;
+		padding-left: 20%;
+	}
+
+	#mainNavbar {
+		position: absolute;
+	}
+}
