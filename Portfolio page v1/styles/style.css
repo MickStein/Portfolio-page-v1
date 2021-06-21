@@ -127,6 +127,10 @@ section {
 	position: relative;
 }
 
+.form-check-input {
+	margin-top: 0;
+}
+
 .icon {
 	width: 30px;
 }
