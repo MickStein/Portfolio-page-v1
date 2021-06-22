@@ -308,4 +308,9 @@ section {
 		height: 25px;
 		bottom: 25px;
 	}
+
+	.row {
+		padding: 0;
+		margin: 0;
+	}
 }
