@@ -26,6 +26,14 @@ body {
 	overflow-x: hidden;
 }
 
+.bg {
+	z-index: -10;
+	position: fixed;
+	background-size: cover;
+	margin-top: -100px;
+	opacity: .1;
+}
+
 body section {
     font-size: 21px;
     text-align: center;
@@ -60,19 +68,6 @@ body section {
     to   { opacity: 1; }
 }
 
-a:hover {
-	color: white;
-}
-
-footer {
-	font-weight: 400;
-	font-size: .9rem;
-	line-height: 2;
-	text-align: center;
-	background-color: rgb(146, 146, 146);
-	margin: 0%;
-}
-
 p {
 	text-align: justify;
 	
@@ -83,87 +78,33 @@ section {
 	padding-bottom: 13%;
 }
 
-/* Class stylings */
 
-.bg {
-	z-index: -10;
-	position: fixed;
-	background-size: cover;
-	margin-top: -100px;
-	opacity: .1;
-}
-
-.blurb h2 {
-	color: rgb(46, 46, 46);
-	font-weight: 400;
-	font-size: 2.5rem;
-}
-
-.blurb p {
-	font-weight: 400;
-	font-size: 1.125rem;
-	line-height: 2;
-}
-
-.card-img-top {
-	height: 191.68px;
-}
-
-.card-text {
-	font-size: 1rem;
-}
-
-.contact-media {
-	list-style: none;
-}
-
-.contact-wrapper {
-	padding-bottom: 50px;
-}
-
-.footer-text {
-	margin-bottom: 0;
+a:hover {
 	color: white;
 }
 
-.footer-wrapper {
-	padding-bottom: 30px;
-	position: relative;
+#headingGroup span {
+	color: rgb(46, 109, 180);
 }
 
-.form-check-input {
-	margin-top: 0;
+#headingGroup h1 {
+	font-weight: 100;
+	font-size: 4rem;
 }
 
 .icon {
 	width: 30px;
 }
 
-.pic-wrapper img {
-	width: 300px;
-	transform: rotate(-10deg);
-	box-shadow: 10px 5px 5px rgba(0, 0, 0, .3);
-}
 
-.projects-wrapper div {
-	background-image: url(/images/weatherapp.jpg);
-	background-repeat: no-repeat;
-}
+/* Nav section */
+
 
 .navbar.scrolled {
 	background: rgb(146, 146, 146);
 	transition: background 500ms
 
 }
-
-.text-wrapper {
-	margin-bottom: 0;
-}
-
-.container-skills {
-	width: 100%;
-	background-color: #ddd;
-} 
 
 #mainNavbar {
 	font-size: 1.5rem;
@@ -188,18 +129,39 @@ section {
   	color: rgb(46, 109, 180);
 }
 
-#headingGroup span {
-	color: rgb(46, 109, 180);
+
+/* Hero Section */
+
+.blurb h2 {
+	color: rgb(46, 46, 46);
+	font-weight: 400;
+	font-size: 2.5rem;
 }
 
-#headingGroup h1 {
-	font-weight: 100;
-	font-size: 4rem;
+.blurb p {
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 2;
 }
 
-#terms {
-	font-size: .6rem;
+.pic-wrapper img {
+	width: 300px;
+	transform: rotate(-10deg);
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, .3);
 }
+
+.text-wrapper {
+	margin-bottom: 0;
+}
+
+
+
+/* Progress Bar Section */
+
+.container-skills {
+	width: 100%;
+	background-color: #ddd;
+} 
 
 /* Prog bar css */
 
@@ -284,7 +246,51 @@ section {
     transition: 1s;
 }
 
+/* Projects Section */
+
+.card-img-top {
+	height: 191.68px;
+}
+
+.card-text {
+	font-size: 1rem;
+}
+
+/* Contact Section */
+
+.contact-media {
+	list-style: none;
+}
+
+.contact-wrapper {
+	padding-bottom: 50px;
+}
+
+/* Footer */
+
+footer {
+	font-weight: 400;
+	font-size: .9rem;
+	line-height: 2;
+	text-align: center;
+	background-color: rgb(146, 146, 146);
+	margin: 0%;
+}
+
+.footer-text {
+	margin-bottom: 0;
+	color: white;
+}
+
+.footer-wrapper {
+	padding-bottom: 30px;
+	position: relative;
+}
+
+
 /* Media queries */
+
+
 @media (max-width: 870px) {
 
 	.blurb p {
@@ -316,5 +322,9 @@ section {
 	.row {
 		padding: 0;
 		margin: 0;
+	}
+	
+	.col-lg-4 {
+		height: 1000px;
 	}
 }
